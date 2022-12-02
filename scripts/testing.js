@@ -234,9 +234,10 @@ function checkingTesting () {
             document.getElementById(radioId).checked=true;
             if (dataArrayUsr[y][1]!=dataArrayAdm[y][1]){
                 for (r in x[c].a){
-                    if (x[c].a[r]==dataArrayUsr[y][1])
+                    if (x[c].a[r]==dataArrayUsr[y][1]){
                     score++;
                     wrongRadioId=`${c}/${r}`;
+                    }
                 }
                 document.getElementById(wrongRadioId).parentElement.classList.add('wrong');
             };
